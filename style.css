@@ -1,0 +1,127 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Center Form Layout Card */
+.form-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 550px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.form-container h2 {
+    color: #0f172a;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.form-subtitle {
+    color: #64748b;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Group Blocks */
+.form-group {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    color: #334155;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+/* Inputs Framework */
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #1e293b;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Interactive focus states */
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Validation Messaging Container Layout */
+.error-msg {
+    color: #ef4444;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    display: block;
+    min-height: 18px; /* Reserves layout space to prevent shifting elements */
+}
+
+/* Submit Action Control */
+.submit-btn {
+    width: 100%;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}
+textarea {
+    resize: none;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.submit-btn {
+    transition: all 0.3s ease;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 25px;
+    }
+
+    .form-container h2 {
+        font-size: 1.4rem;
+    }
+}
